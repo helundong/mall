@@ -22,7 +22,7 @@
 	</bean>
 	<!-- 注册dubbo -->
 	<dubbo:application name="mall-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.1.108:2181" />
+	<dubbo:registry protocol="zookeeper" address="192.168.1.103:2181" />
 	<!-- 引用服务 -->
 	<dubbo:reference interface="cn.mall.service.ItemService" id="itemService"/>
 </beans>
