@@ -14,7 +14,7 @@
 	
 	<!-- 注册dubbo服务 -->
 	<dubbo:application name="mall-manager-service"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.1.108:2181"/>
+	<dubbo:registry protocol="zookeeper" address="192.168.1.103:2181"/>
 	<dubbo:protocol name="dubbo" port="20880"/>
 	<dubbo:service interface="cn.mall.service.ItemService" ref="itemServiceImpl" timeout="300000"/>
 </beans>
